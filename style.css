@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", serif;
+}
+
+.upper-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+    background-color: pink;
+    border-radius: 7px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.img-class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-class > img{
+    width: 300px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    background: pink;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+#yes-btn{
+    font-size: 16px;
+    transition: font-size .3s ease-in-out
+}
+
+@keyframes shake{
+    0%{transform: translateX(0);}
+    25%{transform: translateX(-5px);}
+    50%{transform: translateX(5px);}
+    75%{transform: translateX(-5px);}
+    100%{transform: translateX(0);}
+}
+
+.shake{
+    animation: shake .3s ease-in-out
+}
+
+#response-text {
+    display: none; /* Initially hidden */
+    font-size: 16px;
+    color: black;
+    margin-top: 20px;
+}
+
+.message-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-message{
+    display: none;
+    color: pink;
+    font-weight: 700;
+    font-size: 24px;
+}
