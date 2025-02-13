@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let message = encodeURIComponent("I accept 💖🥳")
             let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`
     
-        window.open(whatsappURL, "_blank")
+        // window.open(whatsappURL, "_blank")
         }
     });
 
