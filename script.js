@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
         clickCount++;
 
         // Update response text based on click count
-        if (clickCount === 1) {
+        if (clickCount % 3 === 1) {
             responseText.innerText = isIgbo ? "M ga-eme gi mma" : "I will treat you well" ; 
-        } else if (clickCount === 2) {
+        } else if (clickCount % 3 === 2) {
             responseText.innerText = isIgbo ? "Nu aririo m" : "Please accept";
         } else{
             responseText.innerText = isIgbo ? "Eme na m ihe a" : "Don't do this  to me"; 
@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Add shake animation to yesButton
         yesButton.classList.add("shake");
 
+       
         // Remove shake animation after 300ms
         setTimeout(() => {
             yesButton.classList.remove("shake");
@@ -42,9 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function updateresponseText (){
-        if (clickCount === 1){
+        if (clickCount % 3 === 1){
             responseText.innerText = isIgbo ? "M ga-eme gi mma" : "I will treat you well" ; 
-        }else if(clickCount === 2){
+        }else if(clickCount % 3 === 2){
             responseText.innerText = isIgbo ? "Nu aririo m" : "Please accept";
         }else{
             responseText.innerText = isIgbo ? "Eme na m ihe a" : "Don't do this  to me"; 
@@ -82,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let message = encodeURIComponent("She accepted 💖🥳")
             let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`
     
-            // window.open(whatsappURL, "_blank")
+        window.open(whatsappURL, "_blank")
         }
     });
 

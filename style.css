@@ -12,6 +12,7 @@
     margin: 10px 20px;
     background-color: pink;
     border-radius: 7px;
+    font-weight: 500;
     width: 80px;
     height: 30px;
     text-align: center;
@@ -23,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10%;
 }
 
 .img-class > img{
@@ -42,6 +44,7 @@ button{
     background: pink;
     border: none;
     border-radius: 7px;
+    font-weight: 500;
     cursor: pointer;
 }
 
