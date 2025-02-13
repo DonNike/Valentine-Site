@@ -84,3 +84,9 @@ button{
     font-weight: 700;
     font-size: 24px;
 }
+
+@media (max-width: 768px){
+    .img-class{
+        margin-top: 35%;
+    }
+}

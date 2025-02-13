@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function sendWhatsappMessage(){
             let phoneNumber = "2349037242644";
-            let message = encodeURIComponent("She accepted 💖🥳")
+            let message = encodeURIComponent("I accept 💖🥳")
             let whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`
     
         window.open(whatsappURL, "_blank")
